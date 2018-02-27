@@ -2,7 +2,9 @@ def prime? (number)
   if number < 2
     return false
   elsif number < 4
-    true
+    return true
+  elsif number % 2 == 0
+    return false
   else
     count = number - 1
     while count > 1
